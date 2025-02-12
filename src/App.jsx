@@ -1,32 +1,26 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import { useState } from "react";
 import { Button, Paper, Typography } from "@mui/material";
-import Header from "./components/header/Header";
 import { Route, Routes } from "react-router";
+import LandingLayout from "./layouts/LandingLayout";
 import Landing from "./pages/Landing";
-import About from "./pages/About";
-import Capabilities from "./pages/Capabilities";
-import Signup from "./pages/Signup";
 import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
+import Error from "./pages/Error";
 
 function App() {
     const [count, setCount] = useState(0);
 
     return (
         <>
-            <Header />
             <Routes>
-                <Route path="/" element={<Landing />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Paper>contact</Paper>} />
-                <Route path="/research" element={<Paper>research</Paper>} />
-                <Route path="/capabilities" element={<Capabilities />} />
+                <Route element={<LandingLayout />}>
+                    <Route index element={<Landing />} />
 
-                <Route path="/blog" element={<Blog />} />
-
-                <Route path="*" element={<Paper>404</Paper>} />
+                    <Route path="contact" element={<Contact />} />
+                    <Route path="blog" element={<Blog />} />
+                </Route>
+                <Route path="*" element={<Error />} />
             </Routes>
         </>
     );

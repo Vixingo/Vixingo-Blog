@@ -5,7 +5,8 @@ import App from "./App.jsx";
 import { ThemeProvider } from "./themes/Theme.jsx";
 import { BrowserRouter } from "react-router";
 import { Provider } from "react-redux";
-import { store } from "./utils/store.jsx";
+import store from "./utils/store";
+
 createRoot(document.getElementById("root")).render(
     <StrictMode>
         <ThemeProvider>

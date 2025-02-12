@@ -1,13 +1,13 @@
 #root {
-    max-width: 1280px;
     margin: 0 auto;
-    padding-top: 64px;
+
     box-sizing: border-box;
 }
 
 div:focus-visible {
     outline: none;
 }
-.card {
-    padding: 2em;
+a {
+    text-decoration: none;
+    color: inherit;
 }

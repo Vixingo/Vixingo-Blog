@@ -25,6 +25,61 @@ const getTheme = (mode) =>
         },
         typography: {
             fontFamily: "Roboto, Arial, sans-serif",
+            h1: {
+                // fontSize: "59px",
+                // lineHeight: "120%",
+                // fontWeight: "700",
+                "@media (max-width:1440px)": {
+                    fontSize: "4rem",
+                },
+            },
+            h2: {
+                // fontSize: "59px",
+                // lineHeight: "120%",
+                // fontWeight: "700",
+                "@media (max-width:600px)": {
+                    fontSize: "2rem",
+                },
+            },
+            h5: {
+                // fontSize: "59px",
+                // lineHeight: "120%",
+                // fontWeight: "700",
+                "@media (max-width:600px)": {
+                    fontSize: "2rem",
+                },
+            },
+        },
+        components: {
+            MuiButton: {
+                styleOverrides: {
+                    root: {
+                        borderRadius: "50px",
+                        textTransform: "none",
+                        "&:hover": {
+                            // backgroundColor: "#115293",
+                        },
+                    },
+                    contained: {
+                        // boxShadow: "none",
+                        "&:hover": {
+                            // boxShadow: "none",
+                        },
+                    },
+                    outlined: {
+                        // border: "2px solid #1976d2",
+                        "&:hover": {
+                            // border: "2px solid #115293",
+                        },
+                    },
+                    text: {
+                        "&:hover": {
+                            textDecoration: "underline",
+                            backgroundColor: "transparent",
+                        },
+                    },
+                },
+            },
         },
     });
 export const ThemeProvider = ({ children }) => {

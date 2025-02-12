@@ -1,6 +1,7 @@
 import React from "react";
 import Grid from "@mui/material/Grid2";
 import { Box, Button, Typography, useMediaQuery } from "@mui/material";
+import BlogBtn from "../button/BlogBtn";
 
 function LandingHero() {
     const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
@@ -37,16 +38,7 @@ function LandingHero() {
                         <Typography variant="h5" fontFamily={"inter"}>
                             The Smartest Investment for SMEs
                         </Typography>
-                        <Button
-                            variant="contained"
-                            sx={{
-                                borderRadius: "50px",
-                                mt: "1rem",
-                                px: "2rem",
-                            }}
-                        >
-                            Learn More
-                        </Button>
+                        <BlogBtn />
                     </Grid>
                     <Grid
                         item

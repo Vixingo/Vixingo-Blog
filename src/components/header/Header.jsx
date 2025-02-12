@@ -17,6 +17,8 @@ import Button from "@mui/material/Button";
 import { useMediaQuery } from "@mui/material";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import { NavLink } from "react-router";
+import BlogBtn from "../button/BlogBtn";
+import Logo from "../dynamic/Logo";
 
 function ElevationScroll(props) {
     const { children, window } = props;
@@ -46,7 +48,7 @@ ElevationScroll.propTypes = {
 };
 
 const drawerWidth = 240;
-const navItems = ["blog", "Research", "Capabilities", "About", "Contact"];
+const navItems = ["Contact"];
 
 function Header(props) {
     const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
@@ -120,31 +122,7 @@ function Header(props) {
                                 flex: 1,
                             }}
                         >
-                            <Typography
-                                variant="h6"
-                                component="div"
-                                sx={{
-                                    flex: 1,
-                                    display: { xs: "flex", sm: "flex" },
-                                    alignItems: "center",
-                                    justifyContent: {
-                                        xs: "center",
-                                        sm: "flex-start",
-                                    },
-                                    textTransform: "uppercase",
-                                    color: (theme) =>
-                                        theme.palette.text.primary,
-                                }}
-                            >
-                                <img
-                                    src={logo}
-                                    alt="logo"
-                                    width={50}
-                                    height={50}
-                                    style={{ marginRight: "10px" }}
-                                />
-                                <b>Morphic</b>Blog
-                            </Typography>
+                            <Logo />
                         </NavLink>
                         <Box
                             sx={{
@@ -166,6 +144,7 @@ function Header(props) {
                                 </NavLink>
                             ))}
                         </Box>{" "}
+                        <BlogBtn />
                         <IconButton
                             aria-label="open drawer"
                             edge="start"

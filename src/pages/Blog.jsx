@@ -1,12 +1,10 @@
 import React from "react";
-import BlogPosts from "../components/blog/BlogPosts";
+import BlogList from "../components/blog/BlogList";
 
 export default function Blog() {
     return (
-        <div>
-            {" "}
-            <h1>My Blog</h1>
-            <BlogPosts />
+        <div style={{ maxWidth: "1140px", margin: "0 auto" }}>
+            <BlogList />
         </div>
     );
 }
