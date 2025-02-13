@@ -33,10 +33,15 @@ function LandingHero() {
                         sx={{ backgroundColor: "", my: "4rem" }}
                     >
                         <Typography variant="h1" fontFamily={"inter"}>
-                            AI Super Brain for Business
+                            Boost you Brain with Vixingo
                         </Typography>
-                        <Typography variant="h5" sx={{ mb: 2 }}>
-                            The Smartest Investment for SMEs
+                        <Typography
+                            variant="h5"
+                            sx={{ mb: 2 }}
+                            fontFamily={"inter"}
+                        >
+                            Learn the latest technology and programming
+                            languages available in the market.
                         </Typography>
                         <BlogBtn />
                     </Grid>

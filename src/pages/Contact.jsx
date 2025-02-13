@@ -1,6 +1,6 @@
 import { Box, Grid2, IconButton, Typography } from "@mui/material";
 import React from "react";
-import ContactForm from "../components/forms/ContactForm";
+
 import FacebookIcon from "@mui/icons-material/Facebook";
 import XIcon from "@mui/icons-material/X";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -57,9 +57,7 @@ export default function Contact() {
                         </a>
                     </Box>
                 </Grid2>
-                <Grid2 item size={{ xs: 12, md: 6 }}>
-                    <ContactForm />
-                </Grid2>
+                <Grid2 item size={{ xs: 12, md: 6 }}></Grid2>
             </Grid2>
         </>
     );
