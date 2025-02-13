@@ -60,13 +60,6 @@ export default function Footer() {
                                     <Logo />
                                 </Box>
                             </Box>
-                            {/* <Typography
-                                variant="body2"
-                                sx={{ mt: 2, mb: 2, color: "text.secondary" }}
-                            >
-                                Copyright ©VixingoBrain 2025. <br /> All rights
-                                reserved by Vixingo Brain LLC.
-                            </Typography>{" "} */}
                         </Grid>
                         {/* Developers */}
                         <Grid item size={{ xs: 1, md: 2 }} sx={{ mt: 1 }}>

@@ -13,7 +13,7 @@ export default function ContactForm() {
                     border: "1px solid #ffffff30",
                     borderRadius: "8px",
                     backgroundColor: "#ffffff10",
-                    margin: "3rem",
+                    margin: { xs: 0, md: "3rem" },
                 }}
             >
                 <Typography variant="h4">Get in Touch</Typography>

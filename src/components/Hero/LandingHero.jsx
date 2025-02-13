@@ -33,9 +33,9 @@ function LandingHero() {
                         sx={{ backgroundColor: "", my: "4rem" }}
                     >
                         <Typography variant="h1" fontFamily={"inter"}>
-                            AI Super Brain for Business{" "}
+                            AI Super Brain for Business
                         </Typography>
-                        <Typography variant="h5" fontFamily={"inter"}>
+                        <Typography variant="h5" sx={{ mb: 2 }}>
                             The Smartest Investment for SMEs
                         </Typography>
                         <BlogBtn />

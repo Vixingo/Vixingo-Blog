@@ -6,7 +6,7 @@ import { NavLink } from "react-router";
 export default function BlogBtn() {
     return (
         <>
-            <NavLink to="/blog">
+            <NavLink to="/blogs">
                 <Button variant="outlined">Read Blogs</Button>
             </NavLink>
         </>

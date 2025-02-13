@@ -39,7 +39,7 @@ export default function Logo() {
                         height={50}
                         style={{ marginRight: "10px" }}
                     />
-                    <b>Vixingo</b>Blog
+                    <b>Vix</b>Blog
                 </Typography>
             </NavLink>{" "}
         </>

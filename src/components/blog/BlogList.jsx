@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchBlogs } from "../../utils/slice/Blog";
 import Grid from "@mui/material/Grid2";
 import PersonIcon from "@mui/icons-material/Person";
+import { NavLink } from "react-router";
 export default function BlogList() {
     const dispatch = useDispatch();
     const { blogs, loading, error, isFetched } = useSelector(
@@ -34,27 +35,31 @@ export default function BlogList() {
                             borderRadius: "8px",
                         }}
                     >
-                        <Grid item size={{ xs: 2, md: 4 }}>
+                        <Grid item size={{ xs: 4, md: 4 }}>
                             {" "}
                             <Skeleton
                                 variant="rounded"
                                 width={"100%"}
-                                height={150}
+                                height={160}
                             />
                         </Grid>
                         <Grid
                             item
-                            size={{ xs: 2, md: 8 }}
+                            size={{ xs: 4, md: 8 }}
                             sx={{ textAlign: "left", padding: "10px" }}
                         >
                             {" "}
-                            <Typography variant="h6">{data.title}</Typography>
+                            <NavLink to={`/blog/${data.id}`}>
+                                <Typography variant="h6">
+                                    {data.title}
+                                </Typography>
+                            </NavLink>
                             <Box
                                 sx={{
                                     display: "flex",
                                     alignItems: "center",
                                     gap: 1,
-                                    my: 1,
+                                    my: 1.2,
                                 }}
                             >
                                 <Avatar

@@ -7,6 +7,8 @@ import Landing from "./pages/Landing";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Error from "./pages/Error";
+import BlogLayout from "./layouts/BlogLayout";
+import BlogDetail from "./components/blog/BlogDetail";
 
 function App() {
     const [count, setCount] = useState(0);
@@ -18,7 +20,10 @@ function App() {
                     <Route index element={<Landing />} />
 
                     <Route path="contact" element={<Contact />} />
-                    <Route path="blog" element={<Blog />} />
+                    <Route path="blogs" element={<Blog />} />
+                </Route>
+                <Route path="blog/" element={<BlogLayout />}>
+                    <Route path=":id" element={<BlogDetail />} />
                 </Route>
                 <Route path="*" element={<Error />} />
             </Routes>
