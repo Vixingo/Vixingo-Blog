@@ -19,6 +19,8 @@ Redux Toolkit: Used for global state management, including theme persistence and
 **Data Fetching**
 JSONPlaceholder API: Used to fetch blog posts for the application.
 
+Local storage : Used to save the fetched data locally for unnecessary API call. 
+
 **Deployment**
 Vercel: Hosting platform for deployment.
 
